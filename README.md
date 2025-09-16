@@ -30,10 +30,6 @@ The goal is to build a responsive **personal portfolio website** to showcase my 
 
 ---
 
-## 📸 Screenshots
-_Add screenshots of your portfolio pages here (Home, About, Projects, Contact)_
-
----
 
 ## 📦 How to Run
 1. Clone this repository:
