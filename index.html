@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== Navigation ===== -->
+  <header>
+    <nav>
+      <h1>My Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="about">
+    <h2>Hello, I'm <span>N . Punitha</span></h2>
+    <p>Aspiring Web Developer | Designer | Tech Enthusiast</p>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I love building interactive and responsive websites using HTML, CSS, and JavaScript.
+    </p>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <!-- To-Do App -->
+      <div class="card">
+        <h3>To-Do App</h3>
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+      </div>
+      <!-- Product Listing -->
+      <div class="card">
+        <h3>Product Listing</h3>
+        <div class="filters">
+          <select id="categoryFilter" onchange="filterProducts()">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+          </select>
+          <select id="sortOption" onchange="sortProducts()">
+            <option value="default">Sort</option>
+            <option value="priceLow">Price: Low → High</option>
+            <option value="priceHigh">Price: High → Low</option>
+          </select>
+        </div>
+        <div id="productList" class="product-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
